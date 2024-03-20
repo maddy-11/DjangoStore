@@ -1,0 +1,282 @@
+body {
+  margin: 0!important;
+    font-family: 'Montserrat', sans-serif!important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-box {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px 50px;
+    color: black;
+    background-color: aquamarine;
+    border-radius: 20px;
+}
+
+.alert {
+    width: 400px;
+    border-color: grey;
+    position: absolute!important;
+    right: 20px;
+    top: 150px;
+    animation: alertFrame 1s;
+    background-color: rgb(13, 110, 253);
+    color: white;
+    z-index: 99;
+}
+
+@keyframes alertFrame {
+    0% {
+        right: -500px;
+    }
+    100% {
+        right: 20px;
+    }
+}
+
+#logout {
+    cursor: pointer;
+}
+
+.custom-dropdown .dropdown-menu {
+    left: -100px!important;
+}
+
+.nav-link.custom-style {
+  color: black !important;
+  background-color: transparent !important;
+}
+
+
+
+
+/*-----*/
+
+.font{
+  font-family: 'Montserrat', sans-serif!important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+hr{width:95%;}
+
+/*---*/
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+.content-container {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 100%;
+  min-height: 100%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 1s ease-in-out;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-text {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.nav-links {
+  margin-top: 20px;
+}
+
+.sidebar .nav-link {
+  display: block;
+  padding: 8px 0;
+  color: #495057;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.sidebar .nav-link:hover {
+  color: #007bff;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+.main-content2 {
+  flex: 1;
+}
+.bg-panel{
+  background-color:#FFCFAA
+}
+.nav-links .nav-link.active {
+  color: orange;
+}
+
+.nav-links .nav-link{
+  white-space: nowrap;
+}
+.bg-back{
+  background-color:#FFF9F5;
+}
+.btn-toggle:hover {
+  background-color:grey!important;
+  color:white!important
+}
+.icon{
+ color:white!important
+}
+.sidefont{
+  white-space: nowrap;
+}
+/*.MuiTableRow-root th {
+  background-color: #343a40!important;
+  color: white!important;
+}
+.css-1vweko9-MuiSvgIcon-root-MuiTableSortLabel-icon{
+  background-color:white!important;
+  border-radius:4px;
+  padding:0!important;
+}*/
+.img{
+  width: 60px!important;
+}
+.nav-link:hover{
+  background-color:black!important;
+  color:white!important;
+}
+.card-img-top {
+  height: 200px !important;
+  width: 90% !important;
+  margin:auto
+}
+
+
+
+.color-button {
+  transition: filter 0.3s ease;
+}
+.col-lg-0{
+  width:0!important;
+} 
+.nav-link.custom-style {
+  color: black !important;
+  background-color: transparent !important;
+}
+
+.nav-link.custom-style:hover {
+  color: black !important;
+  background-color: transparent !important;
+}
+.plus-icon {
+  cursor: pointer;
+}
+.link{
+  text-decoration:none;
+  padding-left:30px
+}
+.col-lg-3_5{
+  width: 30%!important;
+}
+.border-radius-none{
+  border-radius: 0px!important;
+}
+.react-rater-star.is-active {
+  color: #FFC107 !important;
+}
+.add-to-cart-button {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 0.3s ease;
+  background-color:#FFBB38!important
+}
+.home .add-to-cart-button {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 0.3s ease;
+  background-color:darkcyan!important;
+  color:white!important;
+}
+.card:hover .add-to-cart-button {
+  bottom: 20px;
+}
+.bg-silver {
+    background-color: #EEF1F1;
+    width:100%;
+    height:80%
+}
+
+.bg-silver:hover {
+    background-color: darkcyan;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+}
+
+.column-1-5 {
+    flex: 0 0 calc(12.5% - 10px);
+    margin: 0 5px;
+}
+
+.bg-silver:hover img {
+    content: url('http://localhost:8000/media/images/armchairw.png');
+  }
+.scroll .card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.scroll .card.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.nav-tabs .nav-link.active{
+  background-color:#F8F9FA!important;
+  border: none;
+  border-radius:0!important;
+  border-bottom: solid 1px #ffc107!important;
+  font-weight:bold!important;
+}
+.nav-tabs .nav-link{
+  padding:10px!important;
+  margin-right:30px!important;
+  color:black!important;
+}
+.nav-tabs .nav-link:hover{
+  background-color:#F8F9FA!important;
+}
+.nav-tabs{
+  background-color:#F8F9FA!important;
+}
+.tab-content{
+  padding-top:1.5%!important;
+}
+.tab-content p,li{
+  font-size:95%;
+}
+
+thead{
+  background-color:red!important;
+  min-height:100px !important;
+}

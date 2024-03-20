@@ -1,0 +1,23 @@
+.space{
+  margin-right:100px!important;
+}
+.moving-list-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.moving-list {
+  display: flex;
+  white-space: nowrap;
+  animation: move 15s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(-25%);
+  }
+}
+

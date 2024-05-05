@@ -11,8 +11,8 @@ function MyNavbar() {
       <Dropdown as={Nav.Item}>
         <Dropdown.Toggle as={Nav.Link} variant="link" className="nav-link custom-style">Shop</Dropdown.Toggle>
         <Dropdown.Menu>
-          <Dropdown.Item as={Link} to="/shop/shop-1">Shop 1</Dropdown.Item>
-          <Dropdown.Item as={Link} to="/shop/shop-2">Shop 2</Dropdown.Item>
+          <Dropdown.Item as={Link} to="/shop">Shop 1</Dropdown.Item>
+          <Dropdown.Item as={Link} to="/shop">Shop 2</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
       <Dropdown as={Nav.Item}>
@@ -23,7 +23,7 @@ function MyNavbar() {
         </Dropdown.Menu>
       </Dropdown>
       <Nav.Link as={Link} to="/about" className="nav-link custom-style">About</Nav.Link>
-      <Nav.Link as={Link} to="/about" className="nav-link custom-style">Contact</Nav.Link>
+      <Nav.Link as={Link} to="/contact" className="nav-link custom-style">Contact</Nav.Link>
     </Nav>
     <div className="p-2 ms-auto">
     <Link className="d-flex btn btn-dark align-items-center">Become a Seller</Link> 

@@ -15,9 +15,12 @@ import { Provider } from "react-redux";
 import Store from "./Store";
 import Shop from "./Pages/Shop";
 import ProductDetail from "./Pages/ProductDetail";
+import AboutPage from "./Pages/About";
 import AddProduct from "./Pages/AddProduct";
 import Cart from "./Pages/Cart";
 import Checkout from "./Pages/Checkout";
+import Contact from "./Pages/ContactPage";
+import Profile from "./Pages/Profile";
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 
@@ -28,14 +31,19 @@ const App = () => {
       <Router>
         <Routes>
           {/* ShopLayout */}
-          <Route exact path="/products" element={<ShopLayout><Shop/></ShopLayout>} />
+          <Route exact path="/shop" element={<ShopLayout><Shop/></ShopLayout>} />
           {/* HomeLayout */}
-          <Route exact path="/" element={<HomeLayout><Home /></HomeLayout>}></Route>
+          <Route path="/profile" element={<HomeLayout><Profile /></HomeLayout>} />
+
           <Route path="/product/:id/" element={<HomeLayout><ProductDetail /></HomeLayout>} />
           <Route path="/cart" element={<HomeLayout><Cart /></HomeLayout>} />
           {/* Checkout should be wrapped with Elements */}
           <Route path="/checkout" element={<HomeLayout><Elements stripe={stripePromise}><Checkout /></Elements></HomeLayout>} />
+
           {/* Layout */}
+          <Route exact path="/" element={<Layout><Home /></Layout>}></Route>
+          <Route path="/about" element={<Layout><AboutPage/></Layout>}></Route>
+          <Route path="/contact" element={<Layout><Contact/></Layout>}></Route>
           <Route path="/add-product" element={<Layout><AddProduct/></Layout>}></Route>
           <Route path="login/" element={<Layout><Login/></Layout>}></Route>
           <Route path="signup/" element={<Layout><Signup/></Layout>}></Route>

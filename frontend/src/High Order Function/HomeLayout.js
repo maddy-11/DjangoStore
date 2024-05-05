@@ -15,7 +15,7 @@ const Layout = (props) => {
     const navigate = useNavigate();
     useEffect (() => {
         if(!isAuthenticated){
-            navigate('/login')
+            // navigate('/login')
         }
         const values = queryString.parse(location.search);
         const code = values.code;

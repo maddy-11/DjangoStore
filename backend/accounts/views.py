@@ -12,8 +12,6 @@ from dj_rest_auth.registration.views import SocialLoginView
 from django.conf import settings
 from django.contrib.auth import get_user_model
 from rest_framework.views import APIView
-from rest_framework.response import Response
-from django.conf import settings
 import stripe
 
 User = get_user_model()
